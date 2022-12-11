@@ -1,16 +1,11 @@
-# login_sign_out_ui
+# Login and Sign up UI with Flutter & Dart
 
-A new Flutter project.
+Build a login and  Sign up UI using Flutter & Dart. 
+- Navigator
+- Custom Widget
 
-## Getting Started
+<img src="https://user-images.githubusercontent.com/68303716/206929500-6f97a99e-5526-4ceb-b401-4454cb1955aa.png" width="250" height="500" />
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<a href="https://www.buymeacoffee.com/bersyteinf4" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
