@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Login & Sign up UI',
       theme: ThemeData(
+        scaffoldBackgroundColor: Colors.white,
         textTheme: TextTheme(
           bodyText1: TextStyle(color: kDarkPurple),
           bodyText2: TextStyle(color: kDarkPurple),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:login_sign_out_ui/pages/login_page.dart';
 
+import '../utils/constants.dart';
 import '../widgets/custom_button.dart';
 import '../widgets/custom_circle.dart';
 
@@ -12,15 +14,15 @@ class WelcomePage extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          const Positioned(
+          Positioned(
             right: 90.0,
             top: -20.0,
-            child: CustomCircle(),
+            child: CustomCircle(color: kLightPurple),
           ),
-          const Positioned(
+          Positioned(
             left: 90.0,
             bottom: 200.0,
-            child: CustomCircle(),
+            child: CustomCircle(color: kLightPurple),
           ),
           Padding(
             padding: const EdgeInsets.all(20.0),
@@ -41,9 +43,18 @@ class WelcomePage extends StatelessWidget {
                 ),
                 const SizedBox(height: 40.0),
                 Center(
-                  child: CustomButton(
-                    width: size.width * 0.7,
-                    text: 'JOIN NOW',
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (ctx) => const LoginPage(),
+                        ),
+                      );
+                    },
+                    child: CustomButton(
+                      width: size.width * 0.7,
+                      text: 'JOIN NOW',
+                    ),
                   ),
                 ),
                 const SizedBox(height: 30.0),

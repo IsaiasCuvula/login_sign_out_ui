@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:login_sign_out_ui/utils/constants.dart';
 
 class CustomCircle extends StatelessWidget {
-  const CustomCircle({Key? key}) : super(key: key);
+  const CustomCircle({Key? key, required this.color}) : super(key: key);
+  final Color color;
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +10,7 @@ class CustomCircle extends StatelessWidget {
       height: 400.0,
       width: 400.0,
       decoration: BoxDecoration(
-        color: kLightPurple,
+        color: color,
         shape: BoxShape.circle,
       ),
     );
