@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_sign_out_ui/pages/sign_up_page.dart';
 
 import '../utils/constants.dart';
 import '../widgets/custom_back_button.dart';
@@ -64,10 +65,19 @@ class LoginPage extends StatelessWidget {
                     style: TextStyle(fontSize: 16.0, color: Colors.black),
                   ),
                 ),
-                const Center(
-                  child: Text(
-                    "Create New Account?",
-                    style: TextStyle(fontSize: 16.0, color: Colors.black),
+                Center(
+                  child: TextButton(
+                    onPressed: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (ctx) => const SignUpPage(),
+                        ),
+                      );
+                    },
+                    child: const Text(
+                      "Create New Account",
+                      style: TextStyle(fontSize: 16.0, color: Colors.black),
+                    ),
                   ),
                 ),
               ],
